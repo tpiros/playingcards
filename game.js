@@ -56,12 +56,13 @@ Game.prototype.cardsOnTable = function(table, card) {
     return table;
   }
 }
+
 //returns the last card on the table
 Game.prototype.last = function(array) {
   return array[array.length - 1];
 }
 Game.prototype.lastCardOnTable = function(table) {
-  return utils.last(table);
+  return this.last(table);
 }
 
 module.exports = Game;
